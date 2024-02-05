@@ -1,0 +1,51 @@
+:root{
+    --background-color: orange;
+    --text-color: white;
+    --my-font-size: 24px;
+    --my-border: 1px solid black;
+}
+
+#box-1{
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+#box-1 p{
+    font-size: var(--my-font-size)
+}
+
+#box-1:hover{
+    background: purple;
+    color: white;
+    border: var(--my-border);
+    font-size: 30px;
+}
+
+#box-2{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+#box-3{
+    /* background-color: var(--background-color); */
+    /* color: var(--text-color); */
+    color: black;
+    border: var(--my-border);
+    padding: 1rem;
+}
+
+#box-3:hover{
+    background-color: aqua;
+}
+#box-4{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+#box-5{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+#box-6{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
