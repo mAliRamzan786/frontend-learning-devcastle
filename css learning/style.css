@@ -8,11 +8,9 @@
 #box-1{
     background: var(--background-color);
     color: var(--text-color);
+    width: calc(50rem - 200px);
 }
 
-#box-1 p{
-    font-size: var(--my-font-size)
-}
 
 #box-1:hover{
     background: purple;
