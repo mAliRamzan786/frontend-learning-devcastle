@@ -1,0 +1,16 @@
+
+@font-face {
+    font-family: 'Adeel';
+    src: url('./fonts/Inter-Light.ttf'), format('ttf');
+}
+
+h2{
+    font-family: sans-serif;
+}
+
+span{
+    font-family: 'Adeel';
+    /* font-weight: 400; */
+    font-weight: 100;
+
+}
