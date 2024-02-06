@@ -1,16 +1,17 @@
 
 @font-face {
-    font-family: 'Adeel';
+    font-family: 'Inter';
     src: url('./fonts/Inter-Light.ttf'), format('ttf');
+    font-weight:400
 }
 
-h2{
-    font-family: sans-serif;
+@font-face{
+    font-family: 'Inter';
+    src: url('./fonts/Inter-Black.ttf');
+    font-weight: 600;
 }
 
 span{
-    font-family: 'Adeel';
-    /* font-weight: 400; */
-    font-weight: 100;
-
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
 }

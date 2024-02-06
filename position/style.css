@@ -1,0 +1,16 @@
+.main{
+    width: 100%;
+}
+
+.main h2{
+    background: orange;
+    color: white;
+    width: 450px;
+    position: fixed;
+    top: 500px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
