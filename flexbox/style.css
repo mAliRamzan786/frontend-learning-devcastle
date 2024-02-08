@@ -1,0 +1,32 @@
+.main{
+    width: 500px;
+    height: 500px;
+    color: white;
+    display: flex;
+    border: 1px solid orange;
+    padding: 1.5em 0;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main div{
+    width: 125px;
+    height: 25px;
+}
+.main .red{
+    background: red;
+}
+
+.main .blue{
+    background: blue;
+}
+
+.main .purple{
+    background: purple;
+}
+
+.main .magenta{
+    background: magenta;
+}
