@@ -50,3 +50,24 @@ form .submit-button button{
     color: white;
     margin-top: 1rem;
 }
+
+.container{
+    display: flex;
+    width: 500px;
+    border: 1px solid orange;
+    justify-content: space-evenly;
+}
+.red{
+    background: red;
+}
+.blue{
+    background: blue;
+}
+
+.purple{
+    background: purple;
+}
+
+.magenta{
+    background: magenta;
+}
