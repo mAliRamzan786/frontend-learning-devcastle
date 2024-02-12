@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    border: 1px solid royalblue;
+    width: 100px;
+    height: 35px;
+    margin: 50px;
+    background: transparent;
+    transition: all .5s ease-out;
+}
+
+button:hover{
+    background: royalblue;
+    color: white;
+    border-radius: 5px;
+}
