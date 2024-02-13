@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .box{
+    width: 200px;
+    /* height: 150px; */
+    /* border: 1px solid salmon; */
+    padding: 0.5em;
+    /* visibility: visible; */
+    /* display: none; */
+}
+
+.main .box::before{
+    content: 'Before';
+    background-color: blueviolet;
+    color: white;
+}
+
+.main .box::after{
+    content: 'After';
+    background-color: blueviolet;
+    color: white;
+    display: block;
+    width: 100px;
+    height: 50px;
+} 
