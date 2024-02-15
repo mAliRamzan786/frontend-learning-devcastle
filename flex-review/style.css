@@ -104,3 +104,45 @@ footer span{
     font-weight: 500;
     padding-bottom: .5rem;
 }
+
+@media all and (max-width: 1000px){
+    .content-section .content p{
+        font-size: 14px;
+    }
+}
+
+
+@media all and (max-width: 660px){
+
+    header h1{
+        font-size: 30px;
+
+    }
+    .content-section{
+        flex-direction: column;
+    }
+    .content-section .content p{
+        font-size: 13px;
+    }
+}
+
+@media all and (max-width: 700px){
+    nav ul{
+        gap: 1rem;
+    }
+
+    nav ul li{
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 430px){
+    nav ul{
+        gap: 0.5rem;
+    }
+
+    nav ul li{
+        font-size: 12px;
+    }
+}
+
