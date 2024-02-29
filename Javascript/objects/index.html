@@ -9,22 +9,28 @@
 
         const object = {
             rollNo: {
-                new: 20,
-                old: 22
+                new: 22,
+                old: 20
             },
             name: "John Doe",
-            fatherName: "Christopher Doe"
+            fatherName: "Christopher Doe",
+            address: {
+                tempAddress: "Satelite town",
+                permAddress: "Babar Town"
+            }
         }
 
+        // console.log(object['rollNo']);
         // console.log(object['name']);
+        // console.log(object['fatherName']);
 
         for(let address in object){
-            if(address == 'rollNo'){
-                for(let key in object[address]){
-                    document.write(object[address][key]);
+            if(address == 'rollNo' || address == 'address'){
+                for(let identifier in object[address]){
+                    console.log(address + " : " + object[address][identifier]);
                 }
             }else{
-                document.write(object[address]);
+                console.log(address + " : " + object[address]);
             }
         }
     </script>
