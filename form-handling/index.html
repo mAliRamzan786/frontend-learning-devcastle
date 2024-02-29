@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form>
+        <div class="heading">
+            <span>Login</span>
+        </div>
+        <div class="fields">
+            <div class="input-field">
+                <div class="field">
+                    <input type="email" name="email" placeholder="Enter email">
+                </div>
+            </div>
+            <div class="input-field">
+                <div class="field">
+                    <input type="password" name="password" placeholder="Enter password">
+                </div>
+            </div>
+        </div>
+        <div class="submit-button">
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+<script>
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const formData = new FormData(form);
+        console.log(formData.get('email'));
+        console.log(formData.get('password'));
+    })
+</script>
+</html>
