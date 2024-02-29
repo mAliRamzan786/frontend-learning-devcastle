@@ -8,9 +8,13 @@
         function hello(){
             document.write("Hello function is called");
         }
+
+        function handleResize(){
+            console.log("resized");
+        }
     </script>
 </head>
-<body>
+<body onresize="handleResize()">
     <h2>Welcome to Javascript Events</h2>
     <button type="button" onmouseleave="hello()">click me</button>
 </body>
