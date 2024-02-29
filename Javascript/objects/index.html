@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let array = [22, "John Doe", "Christopher Doe"];
+
+        const object = {
+            rollNo: {
+                new: 20,
+                old: 22
+            },
+            name: "John Doe",
+            fatherName: "Christopher Doe"
+        }
+
+        // console.log(object['name']);
+
+        for(let address in object){
+            if(address == 'rollNo'){
+                for(let key in object[address]){
+                    document.write(object[address][key]);
+                }
+            }else{
+                document.write(object[address]);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Javascript Objects</h2>
+</body>
+</html>
