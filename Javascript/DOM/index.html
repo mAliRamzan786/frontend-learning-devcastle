@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h2 id="small-heading">Hello world</h2> -->
+    <input type="password" id="input-field">
+    <button onclick="changeFieldType()">Click me</button>
+</body>
+<script>
+
+    function popup(){
+        alert('Function has been called');
+    }
+
+    // const element = document.getElementById('small-heading');
+    // element.addEventListener('click', popup);
+
+    function changeFieldType(){
+        const inputField = document.getElementById('input-field');
+        console.log(inputField.type, 'before');
+        if(inputField.type == 'text'){
+            inputField.type = "password";
+        }else{
+            inputField.type = 'text';
+        }
+
+        console.log(inputField.type, 'after');
+    }
+</script>
+</html>
