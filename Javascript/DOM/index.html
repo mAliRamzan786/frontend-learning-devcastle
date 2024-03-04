@@ -7,28 +7,50 @@
 </head>
 <body>
     <!-- <h2 id="small-heading">Hello world</h2> -->
-    <input type="password" id="input-field">
-    <button onclick="changeFieldType()">Click me</button>
+    <!-- <input type="password" id="input-field"> -->
+    <button onclick="createElementDynamically()">Click me</button>
+    <ul>
+        
+    </ul>
 </body>
 <script>
 
-    function popup(){
-        alert('Function has been called');
-    }
 
-    // const element = document.getElementById('small-heading');
-    // element.addEventListener('click', popup);
+    // function changeInnerText(){
+    //     const element = document.querySelector('button');
+    //     element.innerText = "Hello world";
+    // }
 
-    function changeFieldType(){
-        const inputField = document.getElementById('input-field');
-        console.log(inputField.type, 'before');
-        if(inputField.type == 'text'){
-            inputField.type = "password";
-        }else{
-            inputField.type = 'text';
+    // function popup(){
+    //     alert('Function has been called');
+    // }
+
+    // // const element = document.getElementById('small-heading');
+    // // element.addEventListener('click', popup);
+
+    // function changeFieldType(){
+    //     const inputField = document.getElementById('input-field');
+    //     console.log(inputField.type, 'before');
+    //     if(inputField.type == 'text'){
+    //         inputField.type = "password";
+    //     }else{
+    //         inputField.type = 'text';
+    //     }
+
+    //     console.log(inputField.type, 'after');
+    // }
+
+
+    function createElementDynamically(){
+        const ul = document.querySelector('ul');
+        for(let i=1; i<=10;i++){
+        const li = document.createElement('li');
+        li.innerText = "I am element number " + i;
+        li.style.color = 'orange';
+        ul.appendChild(li);
         }
-
-        console.log(inputField.type, 'after');
     }
+
+
 </script>
 </html>
