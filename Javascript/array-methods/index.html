@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Array methods</h2>
+
+    <select></select>
+</body>
+<script>
+    // const array = [
+    //     "Alpha",
+    //     "Beta",
+    //     "Charlie",
+    //     "Delta"
+    // ];
+
+    // const options = [
+    //     {name: "Option 1", value: 'option1'},
+    //     {name: "Option 2", value: 'option2'},
+    //     {name: "Option 3", value: 'option3'},
+    //     {name: "Option 4", value: 'option4'}
+    // ]
+
+    const array = [1,2,3,4,5];
+
+    // array.forEach(arrayLoop);
+
+    // function arrayLoop(item, index){
+    //     const span = document.createElement('h2');
+    //     span.innerText = item;
+    //     document.body.appendChild(span);
+    // }
+
+    // const select = document.querySelector('select');
+
+    // options.forEach(function(item,index){
+    //     const option = document.createElement('option');
+    //     option.innerText = item.name;
+    //     option.value = item.value;
+    //     select.appendChild(option);
+    // })
+
+    const newArray = array.map(function(item, index){
+        return item * 10;
+    })
+
+    console.log(newArray, 'newARray');
+    console.log(array, 'old array');
+
+    // for(let i=0;i<4;i++){
+    //     const option = document.createElement('option');
+    //     option.innerText = options[i].name;
+    //     option.value = options[i].value;
+    //     select.appendChild(option); 
+    // }
+</script>
+</html>
