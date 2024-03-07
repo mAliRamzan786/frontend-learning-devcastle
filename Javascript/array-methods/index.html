@@ -7,8 +7,6 @@
 </head>
 <body>
     <h2>Array methods</h2>
-
-    <select></select>
 </body>
 <script>
     // const array = [
@@ -26,6 +24,8 @@
     // ]
 
     const array = [1,2,3,4,5];
+    const slicedArray = array.slice(0,4);
+    console.log(slicedArray, 'slice');
 
     // array.forEach(arrayLoop);
 
@@ -47,6 +47,8 @@
     const newArray = array.map(function(item, index){
         return item * 10;
     })
+
+    newArray.slice(1,2);
 
     console.log(newArray, 'newARray');
     console.log(array, 'old array');
