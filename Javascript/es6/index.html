@@ -36,11 +36,18 @@
     // const hello1 = param => {
     //     console.log(param);
     // }
-    const hello = (param = "Hello") => {
-        console.log(param);
+    // const hello = (param = "Hello") => {
+    //     console.log(param);
+    // }
+
+    // hello('Something');
+
+    const num = (num1, num2, ...numbers) => {
+        console.log(numbers);
+        console.log(num1, num2);
     }
 
-    hello('Something');
+    num(1,2,3,4,5,6,7,8,9,10, 11, 12,13,14,15,16,17,18)
 
 </script>
 </html>
