@@ -42,12 +42,17 @@
 
     // hello('Something');
 
-    const num = (num1, num2, ...numbers) => {
-        console.log(numbers);
-        console.log(num1, num2);
-    }
+    // const num = (num1, num2, ...numbers) => {
+    //     console.log(numbers);
+    //     console.log(num1, num2);
+    // }
 
-    num(1,2,3,4,5,6,7,8,9,10, 11, 12,13,14,15,16,17,18)
+    // num(1,2,3,4,5,6,7,8,9,10, 11, 12,13,14,15,16,17,18)
+
+    const array1 = [1,2,3,4,5];
+    const array2 = [6,7,8,9,10];
+    const array3 = [...array1, ...array2];
+    console.log(array3, 'array3');
 
 </script>
 </html>
