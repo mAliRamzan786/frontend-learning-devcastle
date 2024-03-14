@@ -23,6 +23,7 @@ buttonsArray.forEach((item) => {
     button.innerText = item.title;
     button.addEventListener('click', () => {
         input.value += item.title;
+        // input.value = input.value + item.title;
     })
     buttonsParent.appendChild(button);
 })
